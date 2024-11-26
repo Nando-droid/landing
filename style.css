@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--color__primario:#2baf9b;
+--color__secundario:#f4f4f4;
+--tamnio__fuente:18px;
+--maximo__ancho:1200px;
+}
