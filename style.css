@@ -127,7 +127,236 @@ font-size: 1.5rem;
 color: var(--color-primario);
 font-weight: 700;
 }
+.formulario-items{
+padding: 0;
+outline: 1rem;
+border: none;
+color: var(--color-primario);
+font-size: 1rem;
+border-radius: 5px;
+}
+.formulario-items::placeholder{
+color: var(--color-primario);
+}
+.btn-formulario-btn{
+transition: 0.4s;
+background-color: var(--color-primario);
+}
+.btn-formulario-btn:hover{
+background-color: var(--color-primario-oscuro);
+}
+/*servivios*/
+.servivio-h{
+align-items: center;
+display: flex;
+justify-content: space-between;
+gap: 2rem;
+}
+.titulo-servicio{
+font-size: 2rem;
+font-weight: 550;
+color: var(--texto-negro);
+margin-bottom: 0.6rem;
+}
+.subtitulo-servicio-h{
+color: var(--texto-negro);
+max-width: 550px;
+}
+.btn2{
+outline: none;
+font-size: 1rem;
+padding: 0.75rem 1rem;
+color: var(--color-primario);
+border: 1px solid var(--color-primario);
+background-color:transparent;
+white-space: nowrap;
+border-radius: 6px;
+cursor: pointer;
+transition: 0.5s;
+}
+.btn2:hover{
+background-color: var(--color-primario);
+color: var(--color-blanco);
+}
+.Grid{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+margin-top: 4rem;
+gap: 2rem;
+}
+.Card{
+padding: 2rem;
+text-align: center;
+border-radius: 10px;
+box-shadow: 4px 4px 20px rgba(0,0,0,0.1);
+cursor: pointer;
+}
+.Card span{
+margin-bottom: 1rem;
+padding: 10px 20px;
+display: inline-block;
+font-size: 2rem;
+color: var(--color-primario);
+background-color: var(--color-primario-claro);
+border-radius: 100%;
+transition: 0.3s;
+}
+.Card:hover span{
+background-color: var(--color-primario);
+color: var(--color-primario-claro);
+}
+.servicio-Card-S1{
+font-size: 1rem;
+font-weight: 550px;
+margin-bottom: 0.5rem;
+color: var(--texto-negro);
+}
+.servicio-Card-p1{
+color: var(--texto-negro);
+margin-bottom: 1rem;
+}
+.servicio-Card-A{
+color: var(--color-primario);
+}
+.servicio-Card-A:hover{
+color: var(--color-primario-oscuro);
+}
 
+/*nosotros*/
+.contenedor-n{
+grid-template-columns: repeat(2,1fr);
+gap: 2rem;
+align-items: center;
+display: grid;
+}
+.contennido-N-P{
+color: var(--texto-gris);
+margin-bottom: 1rem;
+}
+.imagen-nosotros{
+margin: auto;
+border-radius: 10px;
+max-width: 400px;
+}
+/*BLOG*/
+.contenedor-b{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+align-items: center;
+gap: 2rem;
+}
+.Imagen-B{
+margin: auto;
+border-radius: 10px;
+max-width: 400px;
+}
+.contenido-blog-p{
+color: var(--texto-gris);
+}
+.Grid-blog{
+margin-top: 4rem;
+display: grid;
+grid-template-columns: 80px auto;
+gap: 2rem;
+}
+.Grid-blog span{
+display: inline-flex;
+align-items: center;
+font-size: 2rem;
+justify-content: center;
+column-rule-color: var(--color-primario);
+border-radius: 10px;
+box-shadow: 4px 4px 20px rgba(0,0,0, 0.1);
+}
+.Grid-blog-h4{
+font-size: 1.2rem;
+font-weight: 550px;
+color: var(--texto-negro);
+margin-bottom: 0.5rem;
+}
+.Grid-blog-p{
+color: var(--texto-gris);
+}
+
+/*paginas*/
+.principio-pagina{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.sudtitulo-pagina{
+max-width: 550px;
+color: var(--texto-gris);
+}
+.pagina-nave{
+align-items: center;
+display: flex;
+gap: 1rem;
+}
+.pagina-nave span{
+font-size: 1.5rem;
+padding: 5px 15px;
+background-color: var(--color-primario-claro);
+color: var(--color-primario);
+cursor: pointer;
+}
+.pagina-Grid{
+margin-top: 4rem;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 2rem;
+}
+.pagina-Card{
+text-align: center;
+box-shadow: 4px 4px 20px rgba(0,0,0,0.1);
+border-radius: 10px;
+cursor: pointer;
+overflow: hidden;
+}
+.pagina-Card-imagen{
+position: relative;
+overflow: hidden;
+list-style-type: none;
+}
+.Redes{
+display: inline-block;
+left: 0;
+position: absolute;
+bottom: -3rem;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+transition: 0.3s;
+}
+.Redes span{
+display: inline-block;
+padding: 5px 10px;
+font-size:  1rem;
+color: var(--texto-negro);
+background-color: var(--color-blanco);
+border-radius: 4px;
+cursor: pointer;
+transition: 0.3s;
+}
+.Redes span:hover{
+color: var(--color-primario);
+}
+.pagina-Card:hover .Redes{
+color: var(--color-primario);
+}
+.pagin-h4{
+font-size: 1.2rem;
+font-weight: 550;
+margin-top: 1rem;
+color: var(--texto-negro);
+}
+.pagin-p{
+color: var(--texto-gris);
+margin-bottom: 1rem;
+}
 
 
 
