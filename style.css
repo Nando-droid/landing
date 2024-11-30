@@ -97,7 +97,7 @@ max-width: 800px;
 line-height: 4rem;
 color: var(--color-blanco);
 }
-.sudcontenido-A{
+.subcontenido-A{
 max-width: 600px;
 color: var(--color-blanco);
 margin-bottom: 2rem;
@@ -461,14 +461,6 @@ border-radius: 6px;
 color:  var(--color-primario);
 }
 .formulario-1 
-
-
-
-
-
-
-
-
 .btn{
     padding: 0.8rem 2rem;
     outline: none;
@@ -476,7 +468,7 @@ color:  var(--color-primario);
     font-size: 1rem;
     white-space: nowrap;
     color:var(--color-blanco);
-    background-color: var(--color_secundario);
+    background-color: var(--color-primario-oscuro);
     border-radius: 7px;
     cursor: pointer;
     }
