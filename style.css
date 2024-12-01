@@ -481,12 +481,7 @@ border-radius: 6px;
 .formulario-1 input::placeholder{
 color:  var(--color-primario);
 }
-<<<<<<< HEAD
-.formulario-1 
-.btn{
-=======
 .formulario-1 .btn{
->>>>>>> prueba
     padding: 0.8rem 2rem;
     outline: none;
     border: none;
