@@ -18,7 +18,7 @@ box-sizing: border-box;
 img{
 width: 100%;
 display: flex;
-/*hh*/
+
 }
 
 /*fhgghgb*/
@@ -28,6 +28,7 @@ scroll-behavior: smooth;
 body{
 font-family:"Poppins", sans-serif ;
 }
+
 header{
 background-image: linear-gradient(to right,rgba(23, 168, 139, 0.9),
 rgba(1, 152, 122, 0.7)),url("imagenes/header.jpg");
@@ -35,33 +36,31 @@ background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
 }
-
-
-
-
-.contenedor-s{
-max-width: var(--ancho-maximo);
+.contenedor-1{
+max-width: var(--max-width);
+display: flex;
 margin: auto;
 padding: 5rem 1rem;
 }
-.contenedor-nvg{
+.contenedor-nav{
 padding: 2rem 1rem;
 display: flex;
 align-items: center;
-justify-content: space-between;}
+justify-content: space-between;
+}
 .logo-nvg{
 font-size: 1.5rem;
 font-weight: 550;
 color: var(--color-blanco);
 }
-.logo-nvg-span{
+.logo-nvg span{
 color: var(--color_secundario);
 }
-.links{
+.n-links{
 list-style: none;
 display: flex;
 align-items: center;
-justify-content: center;
+
 gap: 2rem;
 }
 a{text-decoration: none;}
@@ -84,11 +83,7 @@ border-radius: 5px;
 background-color: var(--color_secundario);
 cursor: pointer;
 }
-.contenedor-1{
-display: flex;
-gap: 5rem;
-align-items: center;
-}
+
 /*h*/
 .contenido-A{
 margin-bottom: 1rem;
@@ -127,10 +122,11 @@ color: var(--color-primario);
 font-weight: 700;
 }
 .formulario-items{
-padding: 0;
-outline: 1rem;
+padding: 1rem;
+outline: none;
 border: none;
 color: var(--color-primario);
+background-color: var(--color-primario-claro);
 font-size: 1rem;
 border-radius: 5px;
 }
@@ -145,7 +141,7 @@ background-color: var(--color-primario);
 background-color: var(--color-primario-oscuro);
 }
 /*servivios*/
-.servivio-h{
+.servicio-h{
 align-items: center;
 display: flex;
 justify-content: space-between;
@@ -165,17 +161,17 @@ max-width: 550px;
 outline: none;
 font-size: 1rem;
 padding: 0.75rem 1rem;
-color: var(--color-blanco);
-border: 1px solid var(--color_secundario);
-background-color:var(--color_secundario);
+color: var(--color-primario-oscuro);
+border: 1px solid var(--color-primario-oscuro);
+background-color:transparent;
 white-space: nowrap;
 border-radius: 6px;
 cursor: pointer;
 transition: 0.5s;
 }
 .btn2:hover{
-color: var(--color_secundario);
-background-color: var(--color_secundario);
+color: var(--color-primario-oscuro);
+background-color: var(--color-blanco);
 
 }
 .Grid{
@@ -202,8 +198,8 @@ border-radius: 100%;
 transition: 0.3s;
 }
 .Card:hover span{
-background-color: var(--color-primario);
-color: var(--color-primario-claro);
+background-color: var(--color-primario-oscuro);
+color: var(--color-primario-oscuro);
 }
 .servicio-Card-S1{
 font-size: 1rem;
@@ -223,11 +219,18 @@ color: var(--color-primario-oscuro);
 }
 
 /*nosotros*/
-.contenedor-n{
+
+.contenedor-n1{
 grid-template-columns: repeat(2,1fr);
 gap: 2rem;
 align-items: center;
 display: grid;
+}
+.titulo-nosotros{
+margin-bottom: 0.5rem;
+font-size: 2rem;
+font-weight: 600;
+color: var(--texto-negro);
 }
 .contennido-N-P{
 color: var(--texto-gris);
@@ -264,9 +267,13 @@ display: inline-flex;
 align-items: center;
 font-size: 2rem;
 justify-content: center;
-column-rule-color: var(--color-primario);
+column-rule-color: var(--texto-negro);
+color: var(--color-primario-claro);
 border-radius: 10px;
 box-shadow: 4px 4px 20px rgba(0,0,0, 0.1);
+}
+.Grid-blog span:hover{
+color: var(--color-primario);
 }
 .Grid-blog-h4{
 font-size: 1.2rem;
@@ -317,22 +324,26 @@ overflow: hidden;
 .pagina-Card-imagen{
 position: relative;
 overflow: hidden;
-list-style-type: none;
+
 }
-.Redes{
+.Redes-contacto{
+
 display: inline-block;
+display: flex;
+
 left: 0;
 position: absolute;
-bottom: -3rem;
+bottom: -4rem;
 width: 100%;
-display: flex;
 justify-content: center;
 align-items: center;
 gap: 1rem;
 transition: 0.3s;
+
 }
-.Redes span{
+.Redes-contacto span{
 display: inline-block;
+position: relative;
 padding: 5px 10px;
 font-size:  1rem;
 color: var(--texto-negro);
@@ -341,7 +352,7 @@ border-radius: 4px;
 cursor: pointer;
 transition: 0.3s;
 }
-.Redes span:hover{
+.Redes-contacto span:hover{
 color: var(--color-primario);
 }
 .pagina-Card:hover .Redes{
@@ -357,10 +368,18 @@ color: var(--texto-negro);
 color: var(--texto-gris);
 margin-bottom: 1rem;
 }
+/*final*/
 .final{
 background-color: var(--color-primario-claro);
+
 }
-.contenedor-ultimo{
+.contenedor-s{
+max-width: var(--ancho-maximo);
+margin: auto;
+padding: 5rem 1rem;
+display: grid;
+}
+.contenedor-final{
 display: grid;
 grid-template-columns: 400px repeat(3,1fr);
 gap: 2rem;
@@ -374,11 +393,11 @@ color: var(--color-primario);
 .final-nav h3 span{
 color: var(--color_secundario);
 }
-.final.h4{
+.final-h4{
 margin-bottom: 1rem;
 font-size: 1.2rem;
 font-weight: 600;
-color: var(--color-primario);
+color: var(--color-primario-oscuro);
 }
 .orden-texto{
 display: flex;
@@ -405,7 +424,7 @@ background-color: var(--color-primario);
 .contenido-Bar{
 margin: auto;
 max-width: var(--ancho-maximo);
-padding: 0.7rem 1rem;
+padding: 0.5rem 1rem;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -417,11 +436,13 @@ color: var(--color-blanco);
 }
 .f-redes{
 display: flex;
+padding: 0.5rem 1rem;
 align-items: center;
 font-size: 1rem;
 gap: 1rem;
 color: var(--color-blanco);
 cursor: pointer;
+justify-content: space-between;
 }
 
 
@@ -445,7 +466,7 @@ color: var(--color-blanco);
 .contenedor-h p{
 margin-bottom: 2rem;
 max-width: 550px;
-color: var(--texto-gris);
+color: var(--color-blanco);
 }
 
 .formulario-1 input{
@@ -460,8 +481,12 @@ border-radius: 6px;
 .formulario-1 input::placeholder{
 color:  var(--color-primario);
 }
+<<<<<<< HEAD
 .formulario-1 
 .btn{
+=======
+.formulario-1 .btn{
+>>>>>>> prueba
     padding: 0.8rem 2rem;
     outline: none;
     border: none;
